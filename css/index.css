@@ -1768,6 +1768,67 @@ button.swiper-pagination-bullet {
   overflow: hidden;
 }
 
+.oreder .header {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.oreder .header .back {
+  position: absolute;
+  left: 100px;
+  top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.oreder .header .back img {
+  margin-right: 10px;
+}
+
+.oreder .header .contacts {
+  border: none;
+}
+
+.oreder-form {
+  max-width: 760px;
+  margin: auto;
+}
+
+.oreder__title {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.5;
+  color: #000;
+  margin-bottom: 30px;
+}
+
+.oreder input {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5;
+  background-color: #ffffff;
+  border-radius: 5px;
+  border: none;
+  padding: 10px;
+  color: #a4acad;
+  max-width: 40%;
+}
+
+.oreder__item {
+  margin-bottom: 20px;
+}
+
+.oreder__item input:first-of-type {
+  margin-right: 20px;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
 }
