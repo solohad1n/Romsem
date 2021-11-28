@@ -1768,13 +1768,18 @@ button.swiper-pagination-bullet {
   overflow: hidden;
 }
 
-.oreder .header {
+.order {
+  background-color: #f2f2f2;
+  min-height: 100vh;
+}
+
+.order .header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
 
-.oreder .header .back {
+.order .header .back {
   position: absolute;
   left: 100px;
   top: 50px;
@@ -1786,20 +1791,20 @@ button.swiper-pagination-bullet {
           align-items: center;
 }
 
-.oreder .header .back img {
+.order .header .back img {
   margin-right: 10px;
 }
 
-.oreder .header .contacts {
+.order .header .contacts {
   border: none;
 }
 
-.oreder-form {
+.order-form {
   max-width: 760px;
   margin: auto;
 }
 
-.oreder__title {
+.order-form__title {
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
@@ -1808,12 +1813,12 @@ button.swiper-pagination-bullet {
   margin-bottom: 30px;
 }
 
-.oreder input {
+.order-form input {
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 1.5;
-  background-color: #ffffff;
+  background-color: #fff;
   border-radius: 5px;
   border: none;
   padding: 10px;
@@ -1821,11 +1826,11 @@ button.swiper-pagination-bullet {
   max-width: 40%;
 }
 
-.oreder__item {
+.order-form__item {
   margin-bottom: 20px;
 }
 
-.oreder__item input:first-of-type {
+.order-form__item input:first-of-type {
   margin-right: 20px;
 }
 
