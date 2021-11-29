@@ -15,10 +15,10 @@
 @import './components/sidebarCart';
 @import './components/reviews';
 @import './components/products';
-
 @import './vendors/swiper-bundle.min.scss';
-
 @import './pages/order';
+@import './components/ways';
+@import './/pages/product-cart';
 
 
 body {
