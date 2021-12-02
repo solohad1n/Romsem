@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="./css/index.css" />
     <link rel="icon" sizes="16x16" href="./img/logo.png">
 </head>
+
 <body>
     <div class="order">
         <header class="header">
@@ -31,47 +33,95 @@
                     <h3 class="order-form__title">
                         Ваши данные
                     </h3>
-                    <div class="col-6">
-                        <div class="order-form__item">
-                            <input type="text" placeholder="Телефон">
-                            <input type="text" placeholder="Имя">
-                        </div>
-                        <div class="order-form__item">
-                            <label>
-                                <input name="payment-method" type="radio">
-                                <span>Наличными</span>
-                            </label>
-                            <label>
-                                <input name="payment-method" type="radio">
-                                <span>Картой</span>
-                            </label>
-                        </div>
-                        <div class="order-form__item">
-                            <input type="radio">
-                            <span>Подготовить сдачу с</span>
-                            <input type="text" placeholder="Сумма" />
-                        </div>
-                        <div class="order-form__item">
-                            <span>Палочки + соусник обычные</span>
-                            <div>
-                                <span>-</span>
-                                <span>10</span>
-                                <span>+</span>
+                    <div class="order__row">
+                        <div class="order-form-left">
+                            <div class="col-6">
+                                <div class="order-form__item">
+                                    <input class="order-form__item__phone" type="text" placeholder="Телефон">
+                                    <input class="order-form__item__name" type="text" placeholder="Имя">
+                                </div>
+                                <div class="order-form__item">
+                                    <label order-form__item__payment>
+                                        <input name="payment-method" type="radio">
+                                        <span>Наличными</span>
+                                    </label>
+                                    <label>
+                                        <input name="payment-method" type="radio">
+                                        <span>Картой</span>
+                                    </label>
+                                </div>
+                                <div class="order-form__item">
+                                    <input type="radio">
+                                    <span>Подготовить сдачу с</span>
+                                    <input class="order-form__item__change" type="text" placeholder="Сумма" />
+                                </div>
+                                <input class="order-form__item__comment" type="text" placeholder="Комменатрий к заказу" />
+                                <div class="order-form__item__additionally">
+                                    <span class="order-form__item__additionally__name">Палочки + соусник обычные</span>
+                                    <div class="order-form__item__additionally__buttons">
+                                        <span class="order-form__item__additionally__buttons__minus">-</span>
+                                        <span>10</span>
+                                        <span class="order-form__item__additionally__buttons__plus">+</span>
+                                    </div>
+                                </div>
+                                <div class="order-form__item__additionally">
+                                    <span class="order-form__item__additionally__name">Палочки + соусник обычные</span>
+                                    <div class="order-form__item__additionally__buttons">
+                                        <span class="order-form__item__additionally__buttons__minus">-</span>
+                                        <span>10</span>
+                                        <span class="order-form__item__additionally__buttons__plus">+</span>
+                                    </div>
+                                </div>
+                                <input class="order-form__item__promo-code" type="text" placeholder="Введите промокод" />
                             </div>
                         </div>
-                        <div class="order-form__item">
-                            <span>Палочки + соусник обычные</span>
-                            <div>
-                                <span>-</span>
-                                <span>10</span>
-                                <span>+</span>
+                        <div class="order-form-right">
+                            <div class="col-6">
+                                <div class="order-form__item">
+                                    <label>
+                                        <input name="payment-method" type="radio">
+                                        <span>Курьером</span>
+                                    </label>
+                                    <label>
+                                        <input name="payment-method" type="radio">
+                                        <span>Самовывоз</span>
+                                    </label>
+                                </div>
+                                <div class="order-form__item">
+                                    <input type="text" placeholder="Улица">
+                                    <input type="text" placeholder="Дом">
+                                </div>
+                                <div>
+                                    <div>
+                                        <input type="text" placeholder="Кв">
+                                        <input type="text" placeholder="Подъезд">
+                                    </div>
+                                    <div>
+                                        <input type="text" placeholder="Этаж">
+                                        <input type="text" placeholder="Код">
+                                    </div>
+                                </div>
+                                <div class="order-form__item">
+                                    <label>
+                                        <input name="payment-method" type="radio">
+                                        <span>На сейчас</span>
+                                    </label>
+                                    <label>
+                                        <input name="payment-method" type="radio">
+                                        <span>На время</span>
+                                    </label>
+                                </div>
+                                <input type="text" placeholder="E-mail(необязательно)" />
                             </div>
                         </div>
-                        <input type="text" placeholder="Введите промокод" />
                     </div>
+                    <button>Оформить заказ</button>
+                    <p>Нажимая на кнопку Оформить заказ, Вы подтверждаете свое согласие на обработку персональных данных
+                        в соответствии с Публичной оффертой</p>
                 </form>
             </section>
         </main>
     </div>
 </body>
+
 </html>

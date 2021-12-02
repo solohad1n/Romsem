@@ -17,9 +17,15 @@
         border: none;
       }
     }
+    &__row{
+      display: flex;
+    }
     &-form {
-      max-width: 760px;
-      margin: auto;
+        max-width: 760px;
+        margin: auto;
+        &-left{
+          margin: 0 40px 0 0;
+        }
       &__title {
         @include font(24px, 400);
         color: $text-black;
@@ -32,14 +38,63 @@
         border: none;
         padding: 10px;
         color: #a4acad;
-        max-width: 40%;
       }
       &__item {
+        span{
+          white-space: nowrap;
+        }
+        display: flex;
+        justify-content: space-between;
         margin-bottom: 20px;
         input:first-of-type {
           margin-right: 20px;
         }
+        &__phone,&__name{
+          width: 160px;
+          height: 30px;
+        }
+        &__change{
+          width: 152px;
+          height: 30px;
+        }
+        &__comment{
+          width: 360px;
+          height: 30px;
+          margin: 0 0 20px 0;
+        }
+        &__promo-code{
+          width: 360px;
+          height: 30px;
+        }
+        &__additionally{
+          display: flex;
+          align-items: center;
+          white-space: nowrap;
+          @include font(18px,500);
+          &__name{
+            padding: 0 64px 0 0;
+          }
+          &__buttons{
+            @include flex(center,center);
+            &__minus,&__plus{
+              @include flex(center,center);
+              transform: 0.3s;
+              width: 10px;
+              height: 10px;
+              border-radius: 50%;
+              cursor: pointer;
+              transition: 0.3s;
+              &:hover{
+                  background-color: $text-orange;
+                  color: $text-white;
+            }
+            }
+            span{
+              padding: 5px;
+            }
+          }
+        }
       }
     }
   }
-  
+

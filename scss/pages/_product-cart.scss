@@ -66,3 +66,100 @@
         cursor: pointer;
     }
 }
+
+.recommend{
+    &__title{
+        @include font(24px,500);
+        color: $text-black;
+        margin: 30px 20px;
+        text-align: center;
+    }
+    &__slider{
+        overflow: hidden;
+        text-align: center;
+        &-wrapper{
+            position: relative;
+        }
+    }
+    &-item{
+        &__image{
+            max-width: 200px;
+            height: 200px;
+        }
+        &__title{
+            @include font(18px,500);
+            margin: 10px 0;
+            color: $text-black;
+        }
+        &__bottom{
+            @include flex(center,center);
+        }
+        &__price{
+            @include font(24px,700);
+            color: $text-black;
+            margin-right: 10px;
+        }
+        &__price + span {
+            @include flex(center,center);
+            width: 26px;
+            height: 26px;
+            border-radius: 50%;
+            background-color: $bg-dark-orange;
+            color: $text-white;
+        }
+    }
+    &__button-next,&__button-prev{
+        @include flex(center,center);
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background-color: $bg-black;
+        cursor: pointer;
+        border: none;
+        outline: none;
+    }
+    &__button-next{
+        position: absolute;
+        right: -80px;
+        top: 20%;
+        z-index: 1;
+        transform: rotate(180deg);
+    }
+    &__button-prev{
+        position: absolute;
+        left: -80px;
+        top: 20%;
+        z-index: 1;
+        transform: rotate(180deg);
+    }
+}
+
+.product-cart{
+    @include mobile{
+        flex-direction: column;
+        img{
+            max-width: 100%;
+        }
+        &__content{
+            padding-left: 0;
+        }
+        &__title{
+            font-size: 24px;
+        }
+        &__weight{
+            margin-bottom: 5px;
+        }
+        .counter__count{
+            font-size: 26px;
+        }
+        &__details{
+            font-size: 16px;
+        }
+        &__ingredients{
+            font-size: 14px;
+        }
+        button{
+            margin-top: 10px;
+        }
+    }
+}
